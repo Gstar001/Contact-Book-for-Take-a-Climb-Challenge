@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="list">
+      <h2>Existing Contacts</h2>
+      <ul class="list-items" id="allContacts">
+        <li>James</li>
+        <li>Bad</li>
+      </ul>
+      <div class="contact-details">
+        <div class="details" id="contactDetails" style="visibility: hidden">
+          <p><strong>Name:</strong><span id="name"></span></p>
+          <p><strong>Phone Number:</strong><span id="phoneNumber"></span></p>
+          <p><strong>Email:</strong><span id="email"></span></p>
+          <div class="actions">
+            <button id="edit">Edit</button>
+            <button id="delete">Delete</button>
+          </div>
+        </div>
+        <div class="contact-form" >
+          <h3>Contact Form</h3>
+          <input type="text" name="name" placeholder="Name" required id="nameField">
+          <input type="text" name="phone_number" placeholder="Phone Number" required id="phoneField">
+          <input type="email" name="email" placeholder="Email" id="emailField">
+          <button id="save">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="contact.js"></script>
+</body>
+</html>
